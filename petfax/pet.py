@@ -9,3 +9,6 @@ bp = Blueprint('pet', __name__, url_prefix="/pets")
 @bp.route('/')
 def index():
     return render_template('index.html', pets=pets)
+
+
+# run flask source venv/Scripts/activate 

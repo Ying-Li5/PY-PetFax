@@ -5,13 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>PetFax</title>
+    <link rel="stylesheet" href="../static/style.css">
   </head>
 
   <body>
-      <h1>Welcome to PetFax</h1>
-      {% for pet in pets %}
-      <h2>{{ pet.pet_name }}</h2>
-      <img src="{{ pet.pet_photo }}" alt="Photo of pet"/>
-      {% endfor %}  
+      <div class="pet-container">
+        <h1>Welcome to PetFax</h1>
+        {% for pet in pets %}
+        <div class="individual-pet">
+          <h2>{{ pet.pet_name }}</h2>
+          <img src="{{ pet.pet_photo }}" alt="Photo of pet" class="pet-photo"/>
+          <!-- redirect this to the page for individual pet -->
+        <a href>Learn More ></a> 
+        </div>
+        {% endfor %}  
+      </div>
   </body>
 </html>
