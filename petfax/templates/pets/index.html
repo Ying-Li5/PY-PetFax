@@ -15,10 +15,14 @@
         <div class="individual-pet">
           <h2>{{ pet.pet_name }}</h2>
           <img src="{{ pet.pet_photo }}" alt="Photo of pet" class="pet-photo"/>
-          <!-- redirect this to the page for individual pet -->
-        <a href>Learn More ></a> 
+          <a href="/pets/{{ pet.pet_id }}">Learn More ></a> 
         </div>
         {% endfor %}  
       </div>
+
+      <div class="add-fact">
+        <p>We'd love to learn more fun facts!</p>
+        <a href="/facts/new">Submit some here.</a>
+    </div>
   </body>
 </html>

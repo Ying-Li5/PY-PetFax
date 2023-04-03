@@ -10,7 +10,7 @@
     margin: -20px;
 }
 
-.pet-container {
+.pet-container, .submission-container, .container {
     background-color: #EED9C4;
 }
 
@@ -20,4 +20,17 @@
 
 a {
     display: block;
+}
+
+.submit-button {
+    display: block;
+}
+
+.fact-text {
+    width: 500px;
+    height: 200px;
+}
+
+.submitter-name {
+    width: 500px;
 }

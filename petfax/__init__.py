@@ -1,4 +1,4 @@
-from flask import Flask, redirect
+from flask import Flask, render_template
 
 def create_app(): 
     app = Flask(__name__)
@@ -8,11 +8,13 @@ def create_app():
     def hello(): 
         return 'Hello, PetFax!'
     
-    # facts page
-    
     # register pet blueprint
     from . import pet
     app.register_blueprint(pet.bp)
+
+    # register fact blueprint
+    from . import fact 
+    app.register_blueprint(fact.bp)
 
     # return the app 
     return app

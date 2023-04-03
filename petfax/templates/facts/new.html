@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PetFax</title>
+    <link rel="stylesheet" href="../static/style.css">
+  </head>
+
+  <body>
+      <div class="submission-container">
+        <h1>Submit Fact</h1>
+        <div class="fact-container">
+          <form>
+            <label for="submitter"><h2>Name</h2></label>
+            <input type="text" name="submitter" class="submitter-name" placeholder="Insert name here...">
+
+            <label for="fact"><h2>Fact</h2></label>
+            <textarea name="fact" placeholder="Insert fact here..." class="fact-text"></textarea>
+
+            <input type="submit" value="Submit Fact" class="submit-button">
+          </form>
+        </div>
+        <a href="/pets">Go Back</a>
+      </div>
+  </body>
+</html>
